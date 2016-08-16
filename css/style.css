@@ -186,3 +186,15 @@ Single-colored icons can be modified like so:
 .icon-angellist {
   width: 0.7138671875em;
 }
+
+@media all and (max-width:767px) {
+    .sidebar {
+        float: none;
+        width: auto;
+    }
+
+    .portfolio {
+        width: auto;
+        float: none;
+    }
+}
