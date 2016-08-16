@@ -1,30 +1,188 @@
-/* Global */
-body {background: #eee url("/img/swirl_pattern.png");position:relative;}
-/*body:before {content: '';position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: #fff;opacity: .5;}*/
-
-h1,h2,h3,h4,h5,h6{font-family: 'Raleway', sans-serif;color:#fff;}
-
-.ui.container {
-    /*width:800px;*/
-    margin-bottom:30px;
-    position:relative;
+*, *:before, *:after {
+    box-sizing: border-box;
 }
-#work .ui.grid>.row>.column {
-    display: flex;
-    margin-bottom: 30px;
-}
-.ui.horizontal.list.social>.item>i.icon {font-size: 24px;}
-#work .ui.grid,
-#stats>.ui.grid {margin-top:1em;}
 
-.ui.progress>.label {top:0;}
-.ui.progress>.bar {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f2f2f2;
 }
-.ui.progress.html>.bar {width:90%;}
-.ui.progress.css>.bar {width:90%;}
-.ui.progress.js>.bar {width:80%;}
-.ui.progress.csharp>.bar {width:55%;}
-.ui.progress.ruby>.bar {width:40%;}
-.ui.progress.sqlserver>.bar {width:25%;}
+
+a {
+    color: #35BC8F;
+    transition: color .25s linear;
+}
+
+a:hover, a:active, a:visited {
+    color:#4899AF;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  line-height: 1.25em;
+}
+
+.clearfix:after {
+  content: '';
+  clear:both;
+  display:table;
+}
+
+.portfolio {
+  width: calc( 100% - 300px );
+  float:left;
+  padding:30px;
+  background:#fff;
+  min-height: 100vh;
+}
+
+.portfolio__section__title {
+    color: #4899AF;
+    font-size: 24px;
+    border-bottom: 1px solid #4899AF;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.taglist {
+    margin: 30px 0;
+}
+
+.taglist .taglist__list {
+    margin-left: -5px;
+}
+
+.taglist .taglist__list .taglist__tag {
+    display: inline-block;
+    background: #efefef;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.employment, .project {
+    margin: 30px 0;
+}
+
+.employment + .employment,
+.project + .project {
+    margin-top: 45px;
+}
+
+.employment__subtitle {
+    font-size: 14px;
+    color: #888;
+    margin: 10px 0;
+}
+
+.employment__desc p,
+.project__desc p {
+    margin: 10px 0px;
+}
+
+.employment__title,
+.project__title {
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+  height: 100%;
+  width: 300px;
+  float: left;
+  background: #f2f2f2;
+}
+
+.sidebar__inner {
+  padding:15px;
+}
+
+.sidebar__title {
+    font-size: 28px;
+    color: #35BC8F;
+    font-weight: bold;
+}
+
+.sidebar__desc__img {
+    width: 100px;
+    float: left;
+    padding: 0 15px 10px 0;
+}
+
+.sidebar__desc {
+    padding: 30px 0;
+}
+
+.sidebar__contacts {
+    font-size: 24px;
+}
+
+a.sidebar__contacts__link {
+    text-decoration: none;
+}
+
+a.sidebar__contacts__link svg {
+    fill: #888;
+    transition: fill .25s linear;
+}
+
+.sidebar__contacts__link:hover svg{
+  fill: #35BC8F;
+}
+
+.sidebar__portfolio {
+  padding:30px 0;
+  text-align:center;
+}
+
+.sidebar__portfolio .btn {
+  font-size:22px;
+}
+
+.btn {
+  display:inline-block;
+  text-decoration:none;
+  border: 1px solid #35BC8F;
+  color: #35BC8F;
+  border-radius:3px;
+  padding:10px 15px;
+  background:transparent;
+  transition: all .25s linear;
+}
+
+.btn:hover {
+  background: #35BC8F;
+  color:#efefef;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-twitter {
+  width: 0.9287109375em;
+}
+
+.icon-facebook {
+  width: 0.5712890625em;
+}
+
+.icon-github {
+  width: 0.9287109375em;
+}
+
+.icon-angellist {
+  width: 0.7138671875em;
+}
