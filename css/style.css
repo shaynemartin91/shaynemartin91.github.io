@@ -21,6 +21,15 @@ p {
   line-height: 1.25em;
 }
 
+ul {
+    list-style: initial;
+    margin-left: 20px;
+}
+
+ul li {
+    padding: 5px 0px;
+}
+
 .clearfix:after {
   content: '';
   clear:both;
